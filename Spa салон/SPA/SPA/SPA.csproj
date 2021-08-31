@@ -1,0 +1,316 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EC1D8C38-3114-4712-B4E8-9F1AADE67D98}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SPA</RootNamespace>
+    <AssemblyName>SPA</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\..\..\Desktop\SPA CENTR\dll\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="adminforms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminforms.Designer.cs">
+      <DependentUpon>adminforms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminprocedur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminprocedur.Designer.cs">
+      <DependentUpon>adminprocedur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="aut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="aut.Designer.cs">
+      <DependentUpon>aut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="klient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="klient.Designer.cs">
+      <DependentUpon>klient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="klientadd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="klientadd.Designer.cs">
+      <DependentUpon>klientadd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="personal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="personal.Designer.cs">
+      <DependentUpon>personal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="personaladd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="personaladd.Designer.cs">
+      <DependentUpon>personaladd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="personalform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="personalform.Designer.cs">
+      <DependentUpon>personalform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Procedur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procedur.Designer.cs">
+      <DependentUpon>Procedur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="procedureadd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="procedureadd.Designer.cs">
+      <DependentUpon>procedureadd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="selectorklient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="selectorklient.Designer.cs">
+      <DependentUpon>selectorklient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="selectormat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="selectormat.Designer.cs">
+      <DependentUpon>selectormat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="selectorpers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="selectorpers.Designer.cs">
+      <DependentUpon>selectorpers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="selectorproc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="selectorproc.Designer.cs">
+      <DependentUpon>selectorproc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="staff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="staff.Designer.cs">
+      <DependentUpon>staff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="staffadd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="staffadd.Designer.cs">
+      <DependentUpon>staffadd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="staffpersonal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="staffpersonal.Designer.cs">
+      <DependentUpon>staffpersonal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usercontent\FirstUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usercontent\FirstUC.Designer.cs">
+      <DependentUpon>FirstUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usercontent\SecondUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usercontent\SecondUC.Designer.cs">
+      <DependentUpon>SecondUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usingstaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="usingstaff.Designer.cs">
+      <DependentUpon>usingstaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usingstaffadd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="usingstaffadd.Designer.cs">
+      <DependentUpon>usingstaffadd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UslugaAdd.cs" />
+    <Compile Include="UslugaAdd.Designer.cs">
+      <DependentUpon>UslugaAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uslugAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uslugAdd.Designer.cs">
+      <DependentUpon>uslugAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UslugaProcedureEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UslugaProcedureEditor.Designer.cs">
+      <DependentUpon>UslugaProcedureEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uslugi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uslugi.Designer.cs">
+      <DependentUpon>uslugi.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="adminforms.resx">
+      <DependentUpon>adminforms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminprocedur.resx">
+      <DependentUpon>adminprocedur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="aut.resx">
+      <DependentUpon>aut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="klient.resx">
+      <DependentUpon>klient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="klientadd.resx">
+      <DependentUpon>klientadd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="personal.resx">
+      <DependentUpon>personal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="personaladd.resx">
+      <DependentUpon>personaladd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="personalform.resx">
+      <DependentUpon>personalform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procedur.resx">
+      <DependentUpon>Procedur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="procedureadd.resx">
+      <DependentUpon>procedureadd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="selectorklient.resx">
+      <DependentUpon>selectorklient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="selectormat.resx">
+      <DependentUpon>selectormat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="selectorpers.resx">
+      <DependentUpon>selectorpers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="selectorproc.resx">
+      <DependentUpon>selectorproc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="staff.resx">
+      <DependentUpon>staff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="staffadd.resx">
+      <DependentUpon>staffadd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="staffpersonal.resx">
+      <DependentUpon>staffpersonal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usercontent\FirstUC.resx">
+      <DependentUpon>FirstUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usercontent\SecondUC.resx">
+      <DependentUpon>SecondUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usingstaff.resx">
+      <DependentUpon>usingstaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usingstaffadd.resx">
+      <DependentUpon>usingstaffadd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UslugaAdd.resx">
+      <DependentUpon>UslugaAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uslugAdd.resx">
+      <DependentUpon>uslugAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UslugaProcedureEditor.resx">
+      <DependentUpon>UslugaProcedureEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uslugi.resx">
+      <DependentUpon>uslugi.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
